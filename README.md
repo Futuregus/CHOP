@@ -1,2 +1,166 @@
-# CHOP
-CHOP (A Comment Header Organization System for Python
+# 🪓 CHOP: Comment Header Organization System for Python
+
+> *Slice your code into clean, readable chunks—like a pro.*
+
+CHOP is a custom VS Code snippet pack designed to help you keep your code beautifully structured and **visually readable**. It brings class, function, and group headers into your workflow with minimal effort and maximum style.
+
+---
+
+## 🌱 Origin Story
+
+CHOP started as a personal system I made for myself because I found Python’s indentation-based scoping to be hard to follow. I wanted something that made scope more *visually* obvious and made large files easier to navigate.
+
+So I started manually adding these headers... and it turned out to be an awesome way to organize everything. Eventually, I turned the system into a VS Code snippet pack so I wouldn’t have to keep copy/pasting. Now it’s quick and clean.
+
+---
+
+## 📦 Features
+
+- 🧱 **Class Headers**  
+  Mark the start and end of class sections with bold, distinct headers.
+
+- 🔹 **Sub-Group Headers**  
+  Break your classes into organized sections with sub-group labels.
+
+- 🔧 **Function Groups**  
+  Organize functions into logical categories with collapsible header blocks.
+
+- 📜 **Quick Description Comments**  
+  Easily add description lines for clarity and documentation.
+
+---
+
+## 💻 Why Use CHOP?
+
+Because messy code is a crime 😤  
+CHOP helps you:
+- Stay visually organized
+- Navigate huge files quickly
+- Communicate structure to teammates
+- Look cool while coding 😎
+
+---
+
+## 🛠️ Installation
+
+1. Go to your VS Code user snippets (File → Preferences → User Snippets).
+2. Create or open a snippet file (e.g., `global.code-snippets`).
+3. Paste in the CHOP JSON contents.
+4. Save and start choppin’.
+
+> ⚠️ **Note:** CHOP is designed specifically for **VS Code** and may not work in other editors like PyCharm or Sublime Text without converting the snippets manually.
+
+---
+
+## 🚀 Usage
+
+| Prefix     | Purpose                         | Description                        |
+|------------|----------------------------------|------------------------------------|
+| `C-hdr`    | Class Header                    | `# %--- Class Name ---%`           |
+| `C-end`    | Class End Marker                | `# %----------------------%`       |
+| `CG-hdr`   | Class Sub-Group Header          | `#  +--- Sub Group ---+`           |
+| `CG-end`   | Sub-Group End Marker            | `#  +----------------------+`      |
+| `FSG-hdr`  | Function Sub-Group Header       | `# === Group Title ===`            |
+| `FSG-end`  | Function Sub-Group End Marker   | `# =====================`          |
+| `desc`     | Description Comment             | `# Description: ...`               |
+
+---
+
+If you want to use the system manually without the snippets, just follow these header formats for different sections of your code:
+
+- **Class Header**  
+  Use `%--- Title ---%` to mark the start of a class.
+
+- **Class Sub-Group Header**  
+  Use `+--- Title ---+` to define sub-sections within a class.
+
+- **Function Sub-Group Header**  
+  Use `=== Title ===` to organize related functions into groups.
+
+- **End of Function Sub-Group**  
+  Use `=====================` to mark the end of a function group.
+
+- **End of Class Sub-Group**  
+  Use `+----------------------+` to mark the end of a class sub-group.
+
+- **End of Class Header**  
+  Use `%----------------------%` to mark the end of a class.
+
+
+---
+
+Feedback? Feature ideas? Just reach out by making an issue.
+
+---
+<details>
+  <summary>Click to view example code using CHOP </summary>
+
+```python
+# %--- Animal Class ---%
+
+class Animal:
+
+#  +--- Animal Initialization  ---+
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+#  +----------------------+
+
+
+
+#  +--- Animal Meathods ---+
+
+
+    def speak(self):
+        pass
+
+    def eat(self):
+        pass
+
+#  +----------------------+
+
+
+# %----------------------%
+
+
+
+# %--- Dog Class ---%
+
+class Dog(Animal):
+
+#  +--- Dog Initialization ---+
+
+    def __init__(self, name, age, breed):
+        super().__init__(name, age)
+        self.breed = breed
+
+ 
+    def speak(self):
+        return f"{self.name} says woof!"
+
+    def fetch(self):
+        return f"{self.name} is fetching a ball."
+
+#  +----------------------+
+
+#  +--- Dog Methods ---+
+
+def main():
+
+    my_dog = Dog("Buddy", 3, "Golden Retriever")
+    
+
+    print(my_dog.speak())   
+    print(my_dog.fetch())   
+
+#  +----------------------+
+
+# %----------------------%
+
+
+if __name__ == "__main__":
+    main()
+    
+```
