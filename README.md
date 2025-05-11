@@ -167,4 +167,4 @@ If you want to use the system manually without the snippets, Just click below an
 
 ---
 
-### Feedback? Feature ideas? Just reach out by making an issue.
+### Feedback? Feature ideas? Just reach out by making an [issue](https://github.com/Futuregus/CHOP/issues).
