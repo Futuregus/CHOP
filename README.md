@@ -120,10 +120,10 @@ if __name__ == "__main__":
 1. Open VS Code 
 2. press Ctrl+Shift+P then search "Snippets: Configure Snippets.
 3. click `New Global snippets file` or `New snippets file for "Scriptname"` if you dont want it for all scripts
-4. Paste in the `Chop contents.
+4. Paste in the [CHOP.code-snippets](https://github.com/Futuregus/CHOP/blob/main/CHOP.code-snippets) contents.
 5. Save and start choppin’.
 
-> ⚠️ **Note:** CHOP is designed specifically for Pyton and **VS Code**.
+> ⚠️ **Note:** CHOP is designed specifically for Python and **VS Code**.
 
 ---
 
