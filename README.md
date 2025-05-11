@@ -8,7 +8,7 @@ CHOP is a custom VS Code snippet pack designed to help you keep your code beauti
 
 ## 🌱 Origin Story
 
-CHOP started as a personal system I made for myself because I found Python’s indentation-based scoping to be hard to follow. I wanted something that made scope more *visually* obvious and made large files easier to navigate.
+CHOP started as a personal system I made for myself because I found Python’s indentation-based scoping to be hard to follow. I wanted something that made scopes more *visually* obvious and made large files easier to navigate.
 
 So I started manually adding these headers... and it turned out to be an awesome way to organize everything. Eventually, I turned the system into a VS Code snippet pack so I wouldn’t have to keep copy/pasting. Now it’s quick and clean.
 
@@ -23,7 +23,7 @@ So I started manually adding these headers... and it turned out to be an awesome
   Break your classes into organized sections with sub-group labels.
 
 - 🔧 **Function Groups**  
-  Organize functions into logical categories with collapsible header blocks.
+  Organize functions into categories.
 
 - 📜 **Quick Description Comments**  
   Easily add description lines for clarity and documentation.
@@ -39,59 +39,6 @@ CHOP helps you:
 - Communicate structure to teammates
 - Look cool while coding 😎
 
----
-
-## 🛠️ Installation
-
-1. Go to your VS Code user snippets (File → Preferences → User Snippets).
-2. Create or open a snippet file (e.g., `global.code-snippets`).
-3. Paste in the CHOP JSON contents.
-4. Save and start choppin’.
-
-> ⚠️ **Note:** CHOP is designed specifically for **VS Code** and may not work in other editors like PyCharm or Sublime Text without converting the snippets manually.
-
----
-
-## 🚀 Usage
-
-| Prefix     | Purpose                         | Description                        |
-|------------|----------------------------------|------------------------------------|
-| `C-hdr`    | Class Header                    | `# %--- Class Name ---%`           |
-| `C-end`    | Class End Marker                | `# %----------------------%`       |
-| `CG-hdr`   | Class Sub-Group Header          | `#  +--- Sub Group ---+`           |
-| `CG-end`   | Sub-Group End Marker            | `#  +----------------------+`      |
-| `FSG-hdr`  | Function Sub-Group Header       | `# === Group Title ===`            |
-| `FSG-end`  | Function Sub-Group End Marker   | `# =====================`          |
-| `desc`     | Description Comment             | `# Description: ...`               |
-
----
-
-If you want to use the system manually without the snippets, just follow these header formats for different sections of your code:
-
-- **Class Header**  
-  Use `%--- Title ---%` to mark the start of a class.
-
-- **Class Sub-Group Header**  
-  Use `+--- Title ---+` to define sub-sections within a class.
-
-- **Function Sub-Group Header**  
-  Use `=== Title ===` to organize related functions into groups.
-
-- **End of Function Sub-Group**  
-  Use `=====================` to mark the end of a function group.
-
-- **End of Class Sub-Group**  
-  Use `+----------------------+` to mark the end of a class sub-group.
-
-- **End of Class Header**  
-  Use `%----------------------%` to mark the end of a class.
-
-
----
-
-Feedback? Feature ideas? Just reach out by making an issue.
-
----
 <details>
   <summary>Click to view example code using CHOP </summary>
 
@@ -164,3 +111,60 @@ if __name__ == "__main__":
     main()
     
 ```
+</details>
+
+---
+
+## 🛠️ Installation
+
+1. Go to your VS Code user snippets (File → Preferences → User Snippets).
+2. Create or open a snippet file (e.g., `global.code-snippets`).
+3. Paste in the CHOP JSON contents.
+4. Save and start choppin’.
+
+> ⚠️ **Note:** CHOP is designed specifically for Pyton and **VS Code**.
+
+---
+
+## 🚀 Usage
+
+| Prefix     | Purpose                         | Output                      |
+|------------|----------------------------------|------------------------------------|
+| `C-hdr`    | Class Header                    | `# %--- Class Name ---%`           |
+| `C-end`    | Class End Marker                | `# %----------------------%`       |
+| `CG-hdr`   | Class Sub-Group Header          | `#  +--- Sub Group ---+`           |
+| `CG-end`   | Class Sub-Group End Marker      | `#  +----------------------+`      |
+| `FSG-hdr`  | Function Sub-Group Header       | `# === Group Title ===`            |
+| `FSG-end`  | Function Sub-Group End Marker   | `# =====================`          |
+| `desc`     | Description Comment             | `# Description: ...`               |
+
+---
+
+If you want to use the system manually without the snippets, Just click below and follow these header formats for different sections of your code:
+<details>
+  <summary>Click to view CHOP </summary>
+
+
+- **Class Header**  
+  Use `%--- Title ---%` to mark the start of a class.
+
+- **Class Sub-Group Header**  
+  Use `+--- Title ---+` to orgonize similar functions within a class.
+
+- **Function Sub-Group Header**  
+  Use `=== Title ===` to organize parts whithin a function.
+
+- **End of Function Sub-Group**  
+  Use `=====================` to mark the end of a function group.
+
+- **End of Class Sub-Group**  
+  Use `+----------------------+` to mark the end of a class sub-group.
+
+- **End of Class Header**  
+  Use `%----------------------%` to mark the end of a class.
+
+</details>
+
+---
+
+### Feedback? Feature ideas? Just reach out by making an issue.
