@@ -117,10 +117,11 @@ if __name__ == "__main__":
 
 ## 🛠️ Installation
 
-1. Go to your VS Code user snippets (File → Preferences → User Snippets).
-2. Create or open a snippet file (e.g., `global.code-snippets`).
-3. Paste in the CHOP JSON contents.
-4. Save and start choppin’.
+1. Open VS Code 
+2. press Ctrl+Shift+P then search "Snippets: Configure Snippets.
+3. click `New Global snippets file` or `New snippets file for "Scriptname"` if you dont want it for all scripts
+4. Paste in the `Chop contents.
+5. Save and start choppin’.
 
 > ⚠️ **Note:** CHOP is designed specifically for Pyton and **VS Code**.
 
