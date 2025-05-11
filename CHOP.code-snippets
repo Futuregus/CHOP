@@ -1,0 +1,72 @@
+{
+  // 🧱 CLASS HEADERS
+  "Class Header": {
+    "prefix": "C-hdr",
+    "body": [
+      "# %--- ${1:Class Title} ---%",
+      "",
+      "$0"
+    ],
+    "description": "Insert a class header"
+  },
+
+  // 🧱 CLASS END HEADER
+  "Class End Header": {
+    "prefix": "C-end",
+    "body": [
+      "# %----------------------%"
+    ],
+    "description": "Insert the end header for a class block"
+  },
+
+  // 🔹 CLASS SUB-GROUP HEADERS
+  "Class Sub-Group Header": {
+    "prefix": "CG-hdr",
+    "body": [
+      "#  +--- ${1:Sub Group Title} ---+",
+      "",
+      "$0"
+    ],
+    "description": "Insert a class sub-group header"
+  },
+
+  // 🔹 CLASS SUB-GROUP END HEADER
+  "Class Sub-Group End Header": {
+    "prefix": "CG-end",
+    "body": [
+      "#  +----------------------+" 
+    ],
+    "description": "Insert the end header for a class sub-group"
+  },
+
+  // 🔧 FUNCTION SUB-GROUP HEADERS
+  "Function Sub-Group Header": {
+    "prefix": "FSG-hdr",
+    "body": [
+      "# === ${1:Function Sub Group Title} ===",
+      "$0",
+      "# ====================="
+    ],
+    "description": "Insert a function sub-group header"
+  },
+
+  // 🔧 FUNCTION SUB-GROUP END HEADER
+  "Function Sub-Group End Header": {
+    "prefix": "FSG-end",
+    "body": [
+      "# ====================="
+    ],
+    "description": "Insert the end header for a function sub-group"
+  },
+
+  // 📜 DESCRIPTION COMMENT
+  "Description Comment": {
+    "prefix": "desc",
+    "body": [
+      "# Description: ${1:Your description here}",
+      "$0"
+    ],
+    "description": "Insert a description comment"
+  }
+}
+
