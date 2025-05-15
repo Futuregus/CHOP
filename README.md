@@ -2,7 +2,7 @@
 
 > *Slice your code into clean, readable chunks—like a pro.*
 
-CHOP is a custom VS Code snippet pack designed to help you keep your code beautifully structured and **visually readable**. It brings class, function, and group headers into your workflow with minimal effort and maximum style.
+CHOP is a custom VS Code snippet pack designed to help you keep your code beautifully structured and **visually readable**. It brings class, method, and group headers into your workflow with minimal effort and maximum style.
 
 ---
 
@@ -16,28 +16,29 @@ So I started manually adding these headers... and it turned out to be an awesome
 
 ## 📦 Features
 
-- 🧱 **Class Headers**  
+* 🧱 **Class Headers**
   Mark the start and end of classes.
 
-- 🔹 **Sub-Group Headers**  
-  Break your classes into groups of related functions.
+* 🔹 **Class Sub-Group Header**
+  Break your classes into groups of related methods.
 
-- 🔧 **Function Groups**  
-  Organize the inside of your functions.
+* 🔧 **Method Sub-Group Header**
+  Organize the inside of your methods.
 
-- 📜 **Quick Description Comments**  
+* 📜 **Quick Description Comments**
   Easily add description lines for clarity and documentation.
 
 ---
 
 ## 💻 Why Use CHOP?
 
-Because messy code is a crime 😤  
+Because messy code is a crime 😤
 CHOP helps you:
-- Stay visually organized
-- Navigate huge files quickly
-- Communicate structure to teammates
-- Look cool while coding 😎
+
+* Stay visually organized
+* Navigate huge files quickly
+* Communicate structure to teammates
+* Look cool while coding 😎
 
 <details>
   <summary>Click to view example code using CHOP </summary>
@@ -57,7 +58,7 @@ class Animal:
 
 
 
-#  +--- Animal Meathods ---+
+#  +--- Animal Methods ---+
 
 
     def speak(self):
@@ -111,15 +112,16 @@ if __name__ == "__main__":
     main()
     
 ```
+
 </details>
 
 ---
 
 ## 🛠️ Installation
 
-1. Open VS Code 
-2. press Ctrl+Shift+P then search "Snippets: Configure Snippets.
-3. click `New Global snippets file` or `New snippets file for "Scriptname"` if you dont want it for all scripts
+1. Open VS Code
+2. Press Ctrl+Shift+P then search "Snippets: Configure Snippets".
+3. Click `New Global snippets file` or `New snippets file for "Scriptname"` if you don’t want it for all scripts.
 4. Paste in the [CHOP.code-snippets](https://github.com/Futuregus/CHOP/blob/main/CHOP.code-snippets) contents.
 5. Save and start choppin’.
 
@@ -129,42 +131,37 @@ if __name__ == "__main__":
 
 ## 🚀 Usage
 
-| Prefix     | Purpose                         | Output                      |
-|------------|----------------------------------|------------------------------------|
-| `C-hdr`    | Class Header                    | `# %--- Class Name ---%`           |
-| `C-end`    | Class End Marker                | `# %----------------------%`       |
-| `CG-hdr`   | Class Sub-Group Header          | `#  +--- Sub Group ---+`           |
-| `CG-end`   | Class Sub-Group End Marker      | `#  +----------------------+`      |
-| `FSG-hdr`  | Function Sub-Group Header       | `# === Group Title ===`            |
-| `FSG-end`  | Function Sub-Group End Marker   | `# =====================`          |
-| `desc`     | Description Comment             | `# Description: ...`               |
+| Prefix    | Purpose                     | Output                        |
+| --------- | --------------------------- | ----------------------------- |
+| `C-hdr`   | Class Header                | `# %--- Class Name ---%`      |
+| `C-end`   | Class End Marker            | `# %----------------------%`  |
+| `CG-hdr`  | Class Sub-Group Header      | `#  +--- Sub Group ---+`      |
+| `CG-end`  | Class Sub-Group End Marker  | `#  +----------------------+` |
+| `MSG-hdr` | Method Sub-Group Header     | `# === Group Title ===`       |
+| `MSG-end` | Method Sub-Group End Marker | `# =====================`     |
+| `desc`    | Description Comment         | `# Description: ...`          |
 
 ---
 
-If you want to use the system manually without the snippets, Just click below and follow these header formats for different sections of your code:
-<details>
-  <summary>Click to view CHOP </summary>
+If you want to use the system manually without the snippets, just click below and follow these header formats for different sections of your code:
 
-
-- **Class Header**  
+* **Class Header**
   Use `%--- Title ---%` to mark the start of a class.
 
-- **Class Sub-Group Header**  
-  Use `+--- Title ---+` to orgonize similar functions within a class.
+* **Class Sub-Group Header**
+  Use `+--- Title ---+` to organize similar methods within a class.
 
-- **Function Sub-Group Header**  
-  Use `=== Title ===` to organize parts whithin a function.
+* **Method Sub-Group Header**
+  Use `=== Title ===` to organize parts within a method.
 
-- **End of Function Sub-Group**  
-  Use `=====================` to mark the end of a function group.
+* **End of Method Sub-Group**
+  Use `=====================` to mark the end of a method sub-group.
 
-- **End of Class Sub-Group**  
+* **End of Class Sub-Group**
   Use `+----------------------+` to mark the end of a class sub-group.
 
-- **End of Class Header**  
+* **End of Class Header**
   Use `%----------------------%` to mark the end of a class.
-
-</details>
 
 ---
 
