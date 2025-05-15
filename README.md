@@ -17,13 +17,13 @@ So I started manually adding these headers... and it turned out to be an awesome
 ## 📦 Features
 
 - 🧱 **Class Headers**  
-  Mark the start and end of class sections with bold, distinct headers.
+  Mark the start and end of classes.
 
 - 🔹 **Sub-Group Headers**  
-  Break your classes into organized sections with sub-group labels.
+  Break your classes into groups of related functions.
 
 - 🔧 **Function Groups**  
-  Organize functions into categories.
+  Organize the inside of your functions.
 
 - 📜 **Quick Description Comments**  
   Easily add description lines for clarity and documentation.
